@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Список справ</string>
+    <string name="action_settings">Налаштування</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="do_not_show_splash">Не показувати стартовий банер</string>
+
+    <string name="current_task">Поточні</string>
+    <string name="done_task">Виконані</string>
+
+    <string name="dialog_editing_title">Редагування справи</string>
+
+    <string name="dialog_title">Нова справа</string>
+    <string name="dialog_ok">Зберегти</string>
+    <string name="dialog_cancel">Відміна</string>
+    <string name="dialog_error_emrty_title">Будь ласка, заповніть це поле.</string>
+
+    <string name="dialog_removing_message">Видалити справу?</string>
+    <string name="removed">Вилучено</string>
+
+    <string name="task_title">Назва</string>
+    <string name="task_date">Дата</string>
+    <string name="task_time">Час</string>
+
+    <string name="separator_overdue">Прострочені</string>
+    <string name="separator_today">Сьогодні</string>
+    <string name="separator_tomorrow">Завтра</string>
+    <string name="separator_future">Майбутні</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-1786226041473389/7886763351</string>
+</resources>

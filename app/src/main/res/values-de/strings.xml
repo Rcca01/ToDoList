@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">To do-Liste</string>
+    <string name="action_settings">Einstellungen</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="do_not_show_splash">Startwerbung nicht anzeigen</string>
+
+    <string name="current_task">Laufende</string>
+    <string name="done_task">Erledigt</string>
+
+    <string name="dialog_editing_title">Korrigierte Ziele</string>
+
+    <string name="dialog_title">Neues Ziel</string>
+    <string name="dialog_ok">Behalten</string>
+    <string name="dialog_cancel">Abbrechen</string>
+    <string name="dialog_error_emrty_title">Bitte geben Sie den Titel ein.</string>
+
+    <string name="dialog_removing_message">Ziel löschen?</string>
+    <string name="removed">gelöscht </string>
+
+    <string name="task_title">Titel</string>
+    <string name="task_date">Datum</string>
+    <string name="task_time">Zeit</string>
+
+    <string name="separator_overdue">Abgelaufen</string>
+    <string name="separator_today">Heute</string>
+    <string name="separator_tomorrow">Morgen</string>
+    <string name="separator_future">Futur</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-1786226041473389/7886763351</string>
+</resources>

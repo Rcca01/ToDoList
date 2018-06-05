@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "571642637632",
+    "firebase_url": "https://todo-fb586.firebaseio.com",
+    "project_id": "todo-fb586",
+    "storage_bucket": "todo-fb586.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571642637632:android:6940831f64ec2649",
+        "android_client_info": {
+          "package_name": "com.example.snowflake.todolist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571642637632-hrktgpobip2rgu4m1ehferoge7e4hi6t.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "571642637632-hrktgpobip2rgu4m1ehferoge7e4hi6t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlICSJuOlPXeKGDNtfCn8vwlbMDI7peCo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
