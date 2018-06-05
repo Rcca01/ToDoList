@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity
 
         // Allows to find the fragment, which is associated with Activity
         mFragmentManager = getFragmentManager();
+        mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
 
         // Checks value of PreferenceHelper
@@ -109,6 +110,11 @@ public class MainActivity extends AppCompatActivity
             item.setChecked(!item.isChecked());
             //changes the value of the checkbox if user click checkbox in Menu
             mPreferenceHelper.putBoolean(PreferenceHelper.SPLASH_IS_INVISIBLE, item.isChecked());
+            return true;
+        }
+
+        if (id == R.id.action_favorite) {
+            Toast.makeText(MainActivity.this, "Action clicked", Toast.LENGTH_LONG).show();
             return true;
         }
 
