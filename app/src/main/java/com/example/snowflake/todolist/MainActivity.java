@@ -117,6 +117,10 @@ public class MainActivity extends AppCompatActivity
             Toast.makeText(MainActivity.this, "Action clicked", Toast.LENGTH_LONG).show();
             return true;
         }
+        if (id == R.id.action_about) {
+            Toast.makeText(MainActivity.this, "Action clicked", Toast.LENGTH_LONG).show();
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }
