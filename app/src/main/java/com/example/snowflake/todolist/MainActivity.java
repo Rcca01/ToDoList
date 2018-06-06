@@ -3,6 +3,7 @@ package com.example.snowflake.todolist;
 import android.app.DialogFragment;
 import android.app.FragmentManager;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.design.widget.FloatingActionButton;
@@ -16,6 +17,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 import com.example.snowflake.todolist.adapter.TabAdapter;
 import com.example.snowflake.todolist.alarm.AlarmHelper;
@@ -44,6 +47,8 @@ public class MainActivity extends AppCompatActivity
     protected SearchView mSearchView;
     protected Toolbar mToolbar;
 
+    private FirebaseAuth mAuth;
+
     public DbHelper getDbHelper() {
         return mDbHelper;
     }
@@ -54,9 +59,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         AlarmHelper.getInstance().init(getApplicationContext());
 
-        Ads.showBanner(this);
-
-
+        mAuth = FirebaseAuth.getInstance();
         PreferenceHelper.getInstance().init(getApplicationContext());
         mPreferenceHelper = PreferenceHelper.getInstance();
 
@@ -113,16 +116,30 @@ public class MainActivity extends AppCompatActivity
             return true;
         }
 
-        if (id == R.id.action_favorite) {
-            Toast.makeText(MainActivity.this, "Action clicked", Toast.LENGTH_LONG).show();
+        if (id == R.id.action_exit) {
+            this.signOut();
             return true;
         }
+
         if (id == R.id.action_about) {
-            Toast.makeText(MainActivity.this, "Action clicked", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(this,AboutActivity.class);
+            startActivity(intent);
+            return true;
+        }
+
+        if (id == R.id.action_map) {
+            Intent intent = new Intent(this,MapsActivity.class);
+            startActivity(intent);
             return true;
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void signOut() {
+        mAuth.signOut();
+        Intent intent = new Intent(this,LoginActivity.class);
+        startActivity(intent);
     }
 
     // Checks value of PreferenceHelper

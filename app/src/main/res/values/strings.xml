@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">To-Do List</string>
+    <string name="app_name">Voobex List</string>
     <string name="action_settings">Settings</string>
 
     <string-array name="priority_levels">
@@ -9,7 +9,13 @@
     </string-array>
 
     <!-- TODO: Remove or change this placeholder text -->
+
     <string name="about">About</string>
+    <string name="back">Back</string>
+    <string name="google_maps_key">AIzaSyBlICSJuOlPXeKGDNtfCn8vwlbMDI7peCo</string>
+    <string name="error_end_encontrado">Error</string>
+    <string name="map">Mapa</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="do_not_show_splash">Don\'t show plash</string>
 
