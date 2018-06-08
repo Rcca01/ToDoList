@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Voobex List</string>
+    <string name="action_settings">Configurações</string>
+
+    <string-array name="priority_levels">
+        <item>Baixa Prioridade</item>
+        <item>Prioridade Normal</item>
+        <item>Alta Prioridade</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="about">Sobre</string>
+    <string name="back">Voltar</string>
+    <string name="google_maps_key">AIzaSyBlICSJuOlPXeKGDNtfCn8vwlbMDI7peCo</string>
+    <string name="error_end_encontrado">Erro</string>
+    <string name="map">Mapa</string>
+
+    <string name="hello_blank_fragment">Olá fragment</string>
+    <string name="do_not_show_splash">Não mostrar SplashScreen</string>
+
+    <string name="current_task">Vigente</string>
+    <string name="done_task">Feito</string>
+
+    <string name="dialog_editing_title">Editar tarefa</string>
+
+    <string name="dialog_title">Adicionar tarefa</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="dialog_error_emrty_title">Por Favor, insira o titulo.</string>
+
+    <string name="dialog_removing_message">Você realmente quer apagar está tarefa?</string>
+    <string name="removed">Remover</string>
+
+    <string name="task_title">Título</string>
+    <string name="task_date">Data</string>
+    <string name="task_time">Hora</string>
+
+    <string name="separator_overdue">Atrasado</string>
+    <string name="separator_today">Hoje</string>
+    <string name="separator_tomorrow">Amanhã</string>
+    <string name="separator_future">Futuro</string>
+</resources>

@@ -27,7 +27,6 @@ import com.example.snowflake.todolist.dialog.AddingTaskDialogFragment;
 import com.example.snowflake.todolist.dialog.EditTaskDialogFragment;
 import com.example.snowflake.todolist.fragment.CurrentTaskFragment;
 import com.example.snowflake.todolist.fragment.DoneTaskFragment;
-import com.example.snowflake.todolist.fragment.SplashFragment;
 import com.example.snowflake.todolist.fragment.TaskFragment;
 import com.example.snowflake.todolist.model.ModelTask;
 
@@ -69,9 +68,6 @@ public class MainActivity extends AppCompatActivity
         mFragmentManager = getFragmentManager();
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
-
-        // Checks value of PreferenceHelper
-        runSplash();
 
         setUI(getApplicationContext());
     }
@@ -140,20 +136,6 @@ public class MainActivity extends AppCompatActivity
         mAuth.signOut();
         Intent intent = new Intent(this,LoginActivity.class);
         startActivity(intent);
-    }
-
-    // Checks value of PreferenceHelper
-    public void runSplash() {
-        //Reads the state of the checkbox
-        if (!mPreferenceHelper.getBoolean(PreferenceHelper.SPLASH_IS_INVISIBLE)) {
-            SplashFragment splashFragment = new SplashFragment();
-
-            mFragmentManager.beginTransaction()
-                    .replace(R.id.content_frame, splashFragment)
-                    .addToBackStack(null)
-                    .commit();
-        }
-
     }
 
     //Responsible for the user interface.

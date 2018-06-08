@@ -94,10 +94,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
                         Toast.makeText(applicationContext, "Authentication failed!", Toast.LENGTH_SHORT).show()
                         updateUI(null)
                     }
-
-                    if (!task.isSuccessful) {
-                        tvStatus.text = "Authentication failed!"
-                    }
                 }
     }
 
@@ -148,8 +144,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
     private fun updateUI(user: FirebaseUser?) {
 
         if (user != null) {
-            tvStatus.text = "User Email: " + user.email + "(verified: " + user.isEmailVerified + ")"
-            tvDetail.text = "Firebase User ID: " + user.uid
 
             email_password_buttons.visibility = View.GONE
             email_password_fields.visibility = View.GONE
@@ -160,9 +154,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
             layout_forgot_password.visibility = View.GONE
             this.todoList()
         } else {
-            tvStatus.text = "Signed Out"
-            tvDetail.text = null
-
             email_password_buttons.visibility = View.VISIBLE
             email_password_fields.visibility = View.VISIBLE
             layout_signed_in_buttons.visibility = View.GONE
